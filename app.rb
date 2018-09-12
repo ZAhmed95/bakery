@@ -19,6 +19,6 @@ get '/muffins' do
 end
 
 get '/style.css' do
-  content_type :css
+  headers 'Content-Type' => 'text/css'
   scss :style
 end
