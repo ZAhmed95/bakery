@@ -1,0 +1,37 @@
+// main colors
+$cake: #feffe1;
+$chocolate: #2A1506;
+$vanilla: #fffdd0;
+$frosting: #79c3f0;
+
+.cake {
+  background-color: $cake !important;
+}
+
+.chocolate {
+  background-color: $chocolate !important;
+}
+
+.vanilla {
+  background-color: $vanilla !important;
+}
+
+.frosting {
+  background-color: $frosting !important;
+}
+
+.cake-text {
+  color: $cake !important;
+}
+
+.chocolate-text {
+  color: $chocolate !important;
+}
+
+.vanilla-text {
+  color: $vanilla !important;
+}
+
+.frosting-text {
+  color: $frosting !important;
+}

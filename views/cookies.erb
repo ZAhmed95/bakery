@@ -1,0 +1,7 @@
+<main class="container">
+  <div class="row">
+    <% cookies.each do |cookie| %>
+      <%= erb :_card, locals: {item: cookie}%>  
+    <% end %>
+  </div>
+</main>
