@@ -24,7 +24,12 @@ body {
   font-size: 5rem;
 }
 
-.card-title {
+.card-header {
   background-color: rgba($chocolate, 0.5);
   border-top-right-radius: 10px;
+}
+
+.card-reveal-header {
+  border-radius: 10px;
+  text-align: center;
 }

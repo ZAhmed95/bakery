@@ -11,11 +11,11 @@ get '/cookies' do
 end
 
 get '/cakes' do
-  erb :cakes
+  erb :cakes, locals: {cakes: Database.get_cakes}
 end
 
 get '/muffins' do
-  erb :muffins
+  erb :muffins, locals: {muffins: Database.get_muffins}
 end
 
 get '/style.css' do

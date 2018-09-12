@@ -1,13 +1,19 @@
 <div class="spacer"></div>
 <div class="col s12 m6 l4">
-  <div class="card">
+  <div class="card hoverable">
     <div class="card-image">
-      <img src="images/<%= item.image_link %>">
-      <span class="card-title accent-font frosting-text"><%= item.name %></span>
+      <img class="activator" src="images/<%= item.image_link %>">
+      <span class="activator card-title accent-font frosting-text card-header"><%= item.name %></span>
     </div>
-    <div class="card-content text-font vanilla chocolate-text">
+    <div class="activator card-content text-font vanilla chocolate-text">
       <h5>$<%= item.price %> each</h5>
-      <h5>$<%= item.dozen_price %> per dozen</h5>
+      <% if item.respond_to? :dozen_price then %>
+        <h5>$<%= item.dozen_price %> per dozen</h5>
+      <% end %>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title frosting-text accent-font chocolate card-reveal-header"><%= item.name %></span>
+      <p class="chocolate-text text-font card-description flow-text"><%= item.description %></p>
     </div>
   </div>
 </div>
