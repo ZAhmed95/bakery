@@ -19,7 +19,7 @@ body {
   height: 15vh;
 }
 
-#tagline {
+.heading {
   font-size: 5rem;
 }
 
@@ -31,4 +31,18 @@ body {
 .card-reveal-header {
   border-radius: 10px;
   text-align: center;
+}
+
+.text-field {
+  background-color: white;
+  height: 50px;
+}
+
+.call-to-action {
+  @extend .accent-font;
+  font-size: 2em;
+  color: $vanilla;
+  border: none;
+  border-radius: 10px;
+  padding: 10px !important;
 }

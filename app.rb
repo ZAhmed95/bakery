@@ -18,6 +18,10 @@ get '/muffins' do
   erb :muffins, locals: {muffins: Database.get_muffins}
 end
 
+get '/catalog' do
+  erb :catalog
+end
+
 get '/style.css' do
   headers 'Content-Type' => 'text/css'
   scss :style
