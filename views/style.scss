@@ -5,6 +5,29 @@ body {
   font-size: 12px;
 }
 
+nav {
+  height: 100px;
+}
+
+.brand-logo {
+  margin-left: 30px !important;
+  margin-top: 10px !important;
+  font-size: 4em !important;
+}
+
+#nav-menu {
+  margin-right: 30px !important;
+  margin-top: 10px !important;
+}
+
+.menu-button {
+  font-size: 2em !important;
+}
+
+.menu-button:hover {
+  color: $frosting;
+}
+
 #bg-image {
   position: absolute;
   width: 100%;
