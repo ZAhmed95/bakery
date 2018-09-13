@@ -24,7 +24,7 @@ get '/catalog' do
 end
 
 post '/catalog' do
-  from = "zia@ziasbakery.com"
+  from = "zaheen.ahmed@ziasbakery.com"
   to = params[:email].to_s
   catalog = erb :catalog_list, {layout: false, locals: {catalog: Database.get_catalog}}
   SGMail.new(from, to, catalog)

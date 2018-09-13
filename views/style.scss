@@ -46,3 +46,12 @@ body {
   border-radius: 10px;
   padding: 10px !important;
 }
+
+.call-to-action:hover {
+  background-color: red !important;
+  cursor: pointer;
+}
+
+.call-to-action:active {
+  background-color: darkred !important;
+}
