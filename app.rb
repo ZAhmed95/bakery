@@ -1,4 +1,5 @@
 require 'sinatra'
+require './mail'
 require './database'
 include Database
 
@@ -20,6 +21,14 @@ end
 
 get '/catalog' do
   erb :catalog
+end
+
+post '/catalog' do
+  from = "zia@ziasbakery.com"
+  to = params[:email].to_s
+  catalog = erb :catalog_list, {layout: false, locals: {catalog: Database.get_catalog}}
+  SGMail.new(from, to, catalog)
+  redirect '/'
 end
 
 get '/style.css' do

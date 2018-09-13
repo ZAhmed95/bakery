@@ -1,0 +1,9 @@
+<h1>Zia's Bakery Catalog</h1>
+<% catalog.each do |type, list| %>
+  <h2><%= type %></h2>
+  <ul>
+  <% list.each do |item| %>
+    <li><strong><%= "#{item.name} " %></strong><%= item.price %> each</li>
+  <% end %>
+  </ul>
+<% end %>

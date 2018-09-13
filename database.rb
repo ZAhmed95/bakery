@@ -41,5 +41,13 @@ module Database
   def get_muffins
     @muffins
   end
+
+  def get_catalog
+    {
+      cakes: @cakes,
+      cookies: @cookies,
+      muffins: @muffins,
+    }
+  end
 end
 
