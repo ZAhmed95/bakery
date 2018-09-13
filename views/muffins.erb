@@ -1,0 +1,7 @@
+<main class="container">
+  <div class="row">
+    <% muffins.each do |muffin| %>
+      <%= erb :_card, locals: {item: muffin}%>  
+    <% end %>
+  </div>
+</main>
